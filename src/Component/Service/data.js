@@ -1,17 +1,5 @@
 const data=[
     {
-     img:"images/car-1.jpg",
-     title:"Toyota RAV4",
-     date:"2021",
-     sites:"4",
-     km:"6.1",
-     liter:"1",
-     designe:"Hybrid",
-     drived:"Automatic",
-     price:"450",
-     vehicle:"USED",
-    },
-    {
         img:"images/car-2.jpg",
         title:"Toyota RAV4",
         date:"2021",
@@ -21,7 +9,7 @@ const data=[
         designe:"Hybrid",
         drived:"Automatic",
         price:"450",
-        vehicle:"LATEST"
+        vehicle:"volse"
        },
        {
         img:"images/car-3.jpg",
@@ -33,7 +21,7 @@ const data=[
         designe:"Hybrid",
         drived:"Automatic",
         price:"450",
-        vehicle:"USED",
+        vehicle:"mercedes",
 
        },
        {
@@ -46,20 +34,8 @@ const data=[
         designe:"Hybrid",
         drived:"Automatic",
         price:"450",
-        vehicle:"USED",
+        vehicle:"mercedes",
 
-       },
-       {
-        img:"images/car-5.jpg",
-        title:"Toyota RAV4",
-        date:"2021",
-        sites:"4",
-        km:"6.1",
-        liter:"1",
-        designe:"Hybrid",
-        drived:"Automatic",
-        price:"450",
-        vehicle:"LATEST"
        },
        {
         img:"images/car-6.jpg",
@@ -71,7 +47,33 @@ const data=[
         designe:"Hybrid",
         drived:"Automatic",
         price:"450",
-        vehicle:"LATEST"
+        vehicle:"volse"
+       },
+
+       {
+        img:"images/car-4.jpg",
+        title:"Toyota RAV4",
+        date:"2021",
+        sites:"4",
+        km:"6.1",
+        liter:"1",
+        designe:"Hybrid",
+        drived:"Automatic",
+        price:"450",
+        vehicle:"toyota",
+
+       },
+       {
+        img:"images/car-6.jpg",
+        title:"Toyota RAV4",
+        date:"2021",
+        sites:"4",
+        km:"6.1",
+        liter:"1",
+        designe:"Hybrid",
+        drived:"Automatic",
+        price:"450",
+        vehicle:"toyota"
        }
 ]
 export default data

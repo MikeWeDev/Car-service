@@ -89,6 +89,9 @@
             margin-top:30px;
             font-size:13px;
             margin-left:50px;
+            @media(max-width:567px){
+              margin-left:10px;
+            }
           .anchor{
             color:white;
             padding:3px;

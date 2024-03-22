@@ -5,6 +5,9 @@ import { MdElectricBolt } from "react-icons/md";
 import { IoIosSpeedometer } from "react-icons/io";
 import { SiAutomattic } from "react-icons/si";
 import { IoPeopleSharp } from "react-icons/io5";
+import { SiMercedes } from "react-icons/si";
+import { SiVolkswagen } from "react-icons/si";
+import { SiToyota } from "react-icons/si";
 function Service() {
   const [filter,setFilter]=useState("");
    const [clicked,setClicked]=useState(1)
@@ -22,9 +25,14 @@ function Service() {
 
            
            <div className='filtering'>
-                <span onClick={()=>{setFilter(""); handleClick(1)}} className={clicked === 1 ? "active" :""}>All</span>
-                  <span onClick={()=>{setFilter("USED"); handleClick(2)}} className={clicked === 2 ? "active" : ""}>USED</span>
-                  <span onClick={()=>{setFilter("LATEST"); handleClick(3)}} className={clicked === 3 ? "active" : ""}>LATEST</span>
+                <span onClick={()=>{setFilter(""); handleClick(1)}} className={clicked === 1 ? "active" :""}>
+                   ALL</span>
+                  <span onClick={()=>{setFilter("mercedes"); handleClick(2)}} className={clicked === 2 ? "active" : ""}>
+                  <SiMercedes  /></span>
+                  <span onClick={()=>{setFilter("volse"); handleClick(3)}} className={clicked === 3 ? "active" : ""}>
+                  <SiVolkswagen /></span>
+                  <span onClick={()=>{setFilter("toyota"); handleClick(4)}} className={clicked === 4 ? "active" : ""}>
+                  <SiToyota /></span>
            </div>
           </div>
           <ul className="featured-car-list" >
@@ -34,11 +42,14 @@ function Service() {
                  if (filter === ""){
                        return item
                     }
-                else if(filter === "USED"){
-                  return item.vehicle === "USED"
+                else if(filter === "mercedes"){
+                  return item.vehicle === "mercedes"
                   }
-                  else if(filter === "LATEST"){
-                    return item.vehicle === "LATEST"
+                  else if(filter === "volse"){
+                    return item.vehicle === "volse"
+                  }
+                  else if(filter === "toyota"){
+                    return item.vehicle === "toyota"
                   }
               
           
