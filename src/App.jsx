@@ -1,17 +1,11 @@
 import './index.css'
-import Home from './Component/Home/Home'
-import About from './Component/About/About'
 import Service from './Component/Service/Service'
-import Product from './Component/Product/Product'
-import Contact from './Component/Contact_Us/Contact'
+import Contact from './Component/Contact/Contact'
 function App() {
 
   return (
   <>
-    <Home />
-    <About />
-    <Product />
-    <Service />
+    <Service /> 
     <Contact />
   </>
   )
